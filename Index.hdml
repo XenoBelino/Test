@@ -33,17 +33,16 @@
         }
 
         .video-container {
-            width: 60%;
-            height: auto;
+            width: 80%;
             margin: 40px auto;
-            border-radius: 20px; /* Rundade kanter för videospelaren */
+            border-radius: 10px; /* Rundade kanter för videospelaren */
             overflow: hidden;
         }
 
         video {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            border-radius: 10px; /* Rundade kanter */
         }
 
         .section-container {
@@ -139,8 +138,8 @@
         /* Gör input[type="file"] osynlig men fortfarande interaktiv */
         #file-input {
             display: none;
-            position: absolute; /* Flytta filväljaren till ett högre lager */
-            z-index: 9999; /* Säkerställ att den är högst */
+            position: absolute;
+            z-index: 1000;
         }
     </style>
 </head>
